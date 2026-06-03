@@ -46,7 +46,7 @@ def _dissect_impl(ctx: DissectionContext) -> RecordIterator:
         'task_desc': task.info.description,
         'task_doc': task.info.documentation,
         'task_triggers': str(task.triggers),
-        'taks_principals': str(task.principals),
+        'task_principals': str(task.principals),
         'task_actions': str(task.actions),
     }
 
@@ -64,7 +64,7 @@ DISSECTOR = Dissector(
         Column('task_desc', DataType.STR),
         Column('task_doc', DataType.STR),
         Column('task_triggers', DataType.STR),
-        Column('taks_principals', DataType.STR),
+        Column('task_principals', DataType.STR),
         Column('task_actions', DataType.STR),
     ],
     description="Scheduled tasks",
